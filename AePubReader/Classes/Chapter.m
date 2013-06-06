@@ -19,6 +19,7 @@
         title = [theTitle retain];
         chapterIndex = theIndex;
 
+        // text is used for the search function
 		NSString* html = [[NSString alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL fileURLWithPath:theSpinePath]] encoding:NSUTF8StringEncoding];
 		text = [[html stringByConvertingHTMLToPlainText] retain];
 		[html release];
